@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 //! An optional implementation of serialization/deserialization.
 use super::LinkedHashSet;
 use serde::de::{Error, SeqAccess, Visitor};

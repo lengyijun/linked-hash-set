@@ -12,6 +12,12 @@
 //!
 //! assert_eq!(set.into_iter().collect::<Vec<_>>(), vec![234, 345, 123]);
 //! ```
+
+#![no_std]
+use std::prelude::v1::*;
+#[macro_use]
+extern crate sgx_tstd as std;
+
 #[cfg(feature = "serde")]
 pub mod serde;
 
